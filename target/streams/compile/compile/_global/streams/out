@@ -1,0 +1,6 @@
+[0m[[0m[0mdebug[0m] [0m[0mAcquiring lock on file /home/s4n/Documents/Evaluación Scala/danielotero-calnatsuma/project/target/.sbt-compilation-infos/danielotero-calnatsuma-compile/.sbt-idea-lock ...[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/Documents/Evaluación Scala/danielotero-calnatsuma/src/main/scala/co/s4n/calnat/Main.scala:69:1: illegal start of simple expression[0m
+[0m[[0m[31merror[0m] [0m[0m}[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[0mdebug[0m] [0m[0mReleasing lock on file /home/s4n/Documents/Evaluación Scala/danielotero-calnatsuma/project/target/.sbt-compilation-infos/danielotero-calnatsuma-compile/.sbt-idea-lock.[0m

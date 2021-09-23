@@ -13,12 +13,14 @@ object Main extends App {
   }
 
   //Adicionales
-  def sumaNat(n: Nat): Nat = Suc(n)
-  def restaNat(nat: Nat): Nat = n match {
+  def sumaN(n: Nat): Nat = Suc(n)
+
+  def restaN(nat: Nat): Nat = nat match {
     case Cero() => Cero()
     case Suc(nat) => nat.nat
   }
 
+  //Ejercicios
   def conIntANat(i: Int): Nat = {
     def iConIntANat(i: Int, r: Nat): Nat = i match {
       case 0 => r
@@ -31,7 +33,7 @@ object Main extends App {
   def imprimirNat(nat: Nat): String = {
     def iImprimirNat(nat: Nat, s: String, numPar: Int): String = esCero(nat) match {
       case true => s + "Cero" + ")" * numPar
-      case false => iImprimirNat(nat.nat, s + "Suc(", numPar + 1)
+      case false => iImprimirNat(restaN(nat), s + "Suc(", numPar + 1)
     }
 
     iImprimirNat(nat, "", 0)
@@ -41,7 +43,7 @@ object Main extends App {
     if (esCero(nat1))
       nat2
     else {
-      sumaNat(restaNat(nat1), sumaNat(nat2))
+      sumaNat(restaN(nat1), sumaN(nat2))
     }
   }
 
@@ -58,5 +60,6 @@ object Main extends App {
 
   //Imprimir resultado
   println(imprimirNat(sumNat))
+
 }
 
