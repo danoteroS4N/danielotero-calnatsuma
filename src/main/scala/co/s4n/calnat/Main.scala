@@ -12,10 +12,6 @@ object Main extends App {
     case Suc(nat) => false
   }
 
-  def esSuc(nat:Nat) = nat match {
-    case Cero() =>
-    case Suc(nat) => false
-  }
   //Adicionales
   def sumaNat(n: Nat): Nat = Suc(n)
   def restaNat(nat: Nat): Nat = n match {
